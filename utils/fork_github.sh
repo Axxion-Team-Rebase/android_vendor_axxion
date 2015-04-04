@@ -13,8 +13,8 @@
 ##
 USERNAME=xplodwild
 BRANCH=android-4.4
-GERRIT=gerrit.omnirom.org
-GITHUB_ORG=omnirom
+GERRIT=gerrit.axxionrom.org
+GITHUB_ORG=axxionrom
 
 ##
 # Script
@@ -58,7 +58,7 @@ if [ $? != 0 ]; then
 	git branch $BRANCH
 fi
 
-git push ssh://gerrit.omnirom.org:29418/$repo_name $BRANCH
+git push ssh://gerrit.axxionrom.org:29418/$repo_name $BRANCH
 
 # If pushing failed, we might want to forcepush the repository
 # to overwite what was previously there.
@@ -66,7 +66,7 @@ if [ $? != 0 ]; then
 	echo "Unable to push!"
 	read -p "Try with -f? [y/n]: " forcepush
 	if [ "$forcepush" = "y" ]; then
-		git push -f ssh://gerrit.omnirom.org:29418/$repo_name $BRANCH
+		git push -f ssh://gerrit.axxionrom.org:29418/$repo_name $BRANCH
 	fi
 fi
 

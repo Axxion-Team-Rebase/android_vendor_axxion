@@ -159,7 +159,7 @@
   <apn carrier="NOVERCA WEB" mcc="222" mnc="01" apn="web.noverca.it" type="default,supl" />
   <apn carrier="Vodafone IT MMS" mcc="222" mnc="10" apn="mms.vodafone.it" mmsc="http://mms.vodafone.it/servlets/mms" mmsproxy="10.128.224.10" mmsport="80" type="mms" />
   <apn carrier="Vodafone IT" mcc="222" mnc="10" apn="mobile.vodafone.it" type="default,supl" />
-  <apn carrier="Vodafone WEB" mcc="222" mnc="10" apn="web.omnitel.it" type="default,supl" />
+  <apn carrier="Vodafone WEB" mcc="222" mnc="10" apn="web.axxiontel.it" type="default,supl" />
   <apn carrier="Wind IT WEB" mcc="222" mnc="88" apn="internet.wind" type="default,supl" />
   <apn carrier="Wind IT MMS" mcc="222" mnc="88" apn="mms.wind" mmsc="http://mms.wind.it" mmsproxy="212.245.244.011" mmsport="8080" type="mms" />
   <apn carrier="Fastweb" mcc="222" mnc="99" apn="apn.fastweb.it" mmsc="http://mms.fastweb.it/mms/wapenc" mmsproxy="10.0.65.9" mmsport="8080" type="default,supl,mms" />
@@ -329,9 +329,9 @@
   <apn carrier="Sonera" mcc="244" mnc="91" apn="Internet" type="default,supl" />
   <apn carrier="TeliaSonera Internet" mcc="244" mnc="91" apn="internet" type="default,supl" />
   <apn carrier="Sonera MMS" mcc="244" mnc="91" apn="wap.sonera.net" mmsc="http://mms.sonera.fi:8002" mmsproxy="195.156.25.33" mmsport="8080" type="mms" />
-  <apn carrier="Omnitel MMS" mcc="246" mnc="01" apn="gprs.mms.lt" user="mms" password="mms" mmsc="http://mms.omnitel.net:8002/" mmsproxy="194.176.32.149" mmsport="8080" type="mms" />
-  <apn carrier="Omnitel" mcc="246" mnc="01" apn="gprs.startas.lt" user="omni" password="omni" type="default,supl" />
-  <apn carrier="Omnitel Internet" mcc="246" mnc="01" apn="omnitel" user="omni" password="omni" type="default,supl" />
+  <apn carrier="Omnitel MMS" mcc="246" mnc="01" apn="gprs.mms.lt" user="mms" password="mms" mmsc="http://mms.axxiontel.net:8002/" mmsproxy="194.176.32.149" mmsport="8080" type="mms" />
+  <apn carrier="Omnitel" mcc="246" mnc="01" apn="gprs.startas.lt" user="axxion" password="axxion" type="default,supl" />
+  <apn carrier="Omnitel Internet" mcc="246" mnc="01" apn="axxiontel" user="axxion" password="axxion" type="default,supl" />
   <apn carrier="Bite LT Internet" mcc="246" mnc="02" apn="banga" type="default,supl" />
   <apn carrier="Bite MMS" mcc="246" mnc="02" apn="mms" user="mms@mms" password="mms" mmsc="http://mmsc" mmsproxy="192.168.150.2" mmsport="8080" type="mms" />
   <apn carrier="Bite " mcc="246" mnc="02" apn="wap" server="213.226.131.133" type="default,supl" />
