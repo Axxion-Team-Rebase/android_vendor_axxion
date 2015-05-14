@@ -1,6 +1,6 @@
 #
 # This policy configuration will be used by all products that
-# inherit from Omni
+# inherit from Axxion
 #
 
 BOARD_SEPOLICY_DIRS += \
@@ -15,6 +15,7 @@ BOARD_SEPOLICY_UNION += \
     property_contexts \
     installd.te \
     property.te \
+    service_contexts \
     shell.te \
     sysinit.te \
     system.te \

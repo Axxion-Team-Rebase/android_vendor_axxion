@@ -12,7 +12,13 @@ PRODUCT_PACKAGES += \
     MonthCalendarWidget \
     OpenDelta \
     OmniSwitch
-
+    
+# Additional Axxion apps
+# init.d support
+PRODUCT_COPY_FILES += \
+    vendor/axxion/prebuilt/app/layersmanager.apk:system/app/LayersManager/LayersManager.apk \
+    vendor/axxion/prebuilt/app/kerneladiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
+    
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
 
