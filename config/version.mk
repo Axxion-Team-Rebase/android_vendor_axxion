@@ -1,37 +1,20 @@
 # Versioning of the ROM
 
-ifdef BUILDTYPE_NIGHTLY
-    ROM_BUILDTYPE := NIGHTLY
-endif
-ifdef BUILDTYPE_AUTOTEST
-    ROM_BUILDTYPE := AUTOTEST
-endif
-ifdef BUILDTYPE_EXPERIMENTAL
-    ROM_BUILDTYPE := EXPERIMENTAL
-endif
-ifdef BUILDTYPE_RELEASE
-    ROM_BUILDTYPE := RELEASE
-endif
+ROM_VERSION := v1.0
 
-ifndef ROM_BUILDTYPE
-    ROM_BUILDTYPE := HOMEMADE
-endif
+# version
+OFFICIAL = true
 
-TARGET_PRODUCT_SHORT := $(TARGET_PRODUCT)
-TARGET_PRODUCT_SHORT := $(subst axxion_,,$(TARGET_PRODUCT_SHORT))
-
-# Build the final version string
-ifdef BUILDTYPE_RELEASE
-    ROM_VERSION := $(PLATFORM_VERSION)-$(TARGET_PRODUCT_SHORT)
+# release 
+ifeq ($(OFFICIAL),true)
+    VERSION_STATE := OFFICIAL
 else
-ifeq ($(ROM_BUILDTIME_LOCAL),y)
-    ROM_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d-%H%M%z)-$(TARGET_PRODUCT_SHORT)-$(ROM_BUILDTYPE)
-else
-    ROM_VERSION := $(PLATFORM_VERSION)-$(shell date -u +%Y%m%d)-$(TARGET_PRODUCT_SHORT)-$(ROM_BUILDTYPE)
+    VERSION_STATE := UNOFFICIAL
 endif
-endif
+
+    AXXION_VERSION := $(ROM_VERSION)-$(VERSION_STATE)
 
 # Apply it to build.prop
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=OmniROM-$(ROM_VERSION) \
-    ro.axxion.version=$(ROM_VERSION)
+  ro.axxion.version=$(ROM_VERSION) \
+  ro.modversion=$(AXXION_VERSION) \
