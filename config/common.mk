@@ -49,9 +49,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/axxion/prebuilt/etc/init.local.rc:root/init.axxion.rc
 
+# Init script file with axxion extras
+PRODUCT_COPY_FILES += \
+    vendor/axxion/changelog.txt:system/etc/changelog.txt
+    
 # Enable SIP and VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+
+# Latin IME lib - gesture typing
+PRODUCT_COPY_FILES += \
+    vendor/axxion/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
 # Chromium Prebuilt
 ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
