@@ -2,7 +2,7 @@ PRODUCT_BRAND ?= axxion
 
 # use specific resolution for bootanimation
 PRODUCT_COPY_FILES += \
-    vendor/axxion/prebuilt/bootanimation/res/$(TARGET_BOOTANIMATION_SIZE).zip:system/media/bootanimation.zip
+    vendor/axxion/prebuilt/bootanimation/$(TARGET_BOOTANIMATION_SIZE).zip:system/media/bootanimation.zip
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -1,3 +1,6 @@
+add_lunch_combo axxion_find7op_serdebug
 add_lunch_combo axxion_hammerhead-userdebug
-add_lunch_combo axxion_hammerhead-eng
-
+add_lunch_combo axxion_i9300-userdebug
+add_lunch_combo axxion_mako_userdebug
+add_lunch_combo axxion_odin-userdebug
+add_lunch_combo axxion_shamu-userdebug
